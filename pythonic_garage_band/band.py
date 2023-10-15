@@ -4,10 +4,25 @@ class Band:
 class Musician:
     def __init__(self, name):
         self.name = name
+        self._instrument = None
+        self._role = "Musician"
 
-class Guitarist(Musician):
     def __str__(self):
-        return f"My name is {self.name} and I play guitar"
+        return f"My name is {self.name} and I play {self._instrument}"
 
     def __repr__(self):
-        return f"Guitarist instance. Name = {self.name}"
+        return f"{self._role} instance. Name = {self.name}"
+
+
+class Guitarist(Musician):
+    def __init__(self, name):
+        self.name = name
+        self._instrument = "guitar"
+        self._role = "Guitarist"
+
+
+class Drummer(Musician):
+    def __init__(self, name):
+        self.name = name
+        self._instrument = "drums"
+        self._role = "Drummer"
