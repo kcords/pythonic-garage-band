@@ -1,10 +1,17 @@
 class Band:
+    instances = []
+
     def __init__(self, name, members):
         self.name = name
         self.members = members
+        self.instances.append(self)
 
     def play_solos(self):
         return [member.play_solo() for member in self.members]
+
+    @classmethod
+    def to_list(cls):
+        return cls.instances
 
 
 class Musician:
