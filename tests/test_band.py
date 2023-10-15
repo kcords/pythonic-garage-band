@@ -92,7 +92,6 @@ def test_individual_solos(one_band):
             assert member.play_solo() == "rattle boom crash"
 
 
-@pytest.mark.skip("todo")
 def test_band_members(one_band):
 
     assert len(one_band.members) == 3
