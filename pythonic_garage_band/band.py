@@ -6,6 +6,12 @@ class Band:
         self.members = members
         self.instances.append(self)
 
+    def __str__(self):
+        return f"This is the {self.name} band!"
+
+    def __repr__(self):
+        return "Band('Band Name', [])"
+
     def play_solos(self):
         return [member.play_solo() for member in self.members]
 
