@@ -26,3 +26,10 @@ class Drummer(Musician):
         self.name = name
         self._instrument = "drums"
         self._role = "Drummer"
+
+
+class Bassist(Musician):
+    def __init__(self, name):
+        self.name = name
+        self._instrument = "bass"
+        self._role = "Bassist"
