@@ -1,5 +1,7 @@
 class Band:
-    pass
+    def __init__(self, name, members):
+        self.name = name
+        self.members = members
 
 class Musician:
     def __init__(self, name):
