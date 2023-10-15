@@ -57,28 +57,24 @@ def test_band_name():
     assert nirvana.name == "Nirvana"
 
 
-@pytest.mark.skip("todo")
 def test_guitarist():
     jimi = Guitarist("Jimi Hendrix")
     assert jimi.name == "Jimi Hendrix"
     assert jimi.get_instrument() == "guitar"
 
 
-@pytest.mark.skip("todo")
 def test_bassist():
     flea = Bassist("Flea")
     assert flea.name == "Flea"
     assert flea.get_instrument() == "bass"
 
 
-@pytest.mark.skip("todo")
 def test_drummer():
     ginger = Drummer("Ginger Baker")
     assert ginger.name == "Ginger Baker"
     assert ginger.get_instrument() == "drums"
 
 
-@pytest.mark.skip("todo")
 def test_instruments(one_band):
     instruments = ["guitar", "bass", "drums"]
     for i, member in enumerate(one_band.members):

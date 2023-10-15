@@ -15,6 +15,9 @@ class Musician:
     def __repr__(self):
         return f"{self._role} instance. Name = {self.name}"
 
+    def get_instrument(self):
+        return self._instrument
+
 
 class Guitarist(Musician):
     def __init__(self, name):
