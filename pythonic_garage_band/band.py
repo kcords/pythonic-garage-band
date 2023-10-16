@@ -64,3 +64,7 @@ class Bassist(Musician):
 
     def play_solo(self):
         return "bom bom buh bom"
+
+if __name__ == "__main__":
+    print(Band("Test Band", []))
+    print(Musician("Test Musician"))
