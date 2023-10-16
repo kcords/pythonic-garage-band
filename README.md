@@ -4,12 +4,20 @@ Project: pythonic-garage-band
 Author: Kyle Cordell
 
 ## Setup
+You can install the required dependencies using:
+```
+pip install -r requirements.txt
+```
 
 ### How to initialize/run your application (where applicable)
-e.g. python main.py
-How to use your library (where applicable)
+The application primarily is primarily run through the tests below, but you can run the following to test locally as well:
+```
+python3 pythonic_garage_band/band.py
+```
+
 
 ### Tests
-How do you run tests?
-Any tests of note?
-Describe any tests that you did not complete, skipped, etc
+Tests can be ran from the root directory using:
+```
+pytest
+```
